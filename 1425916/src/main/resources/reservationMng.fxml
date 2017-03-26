@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerReservationMng">
+   <children>
+      <Label layoutX="176.0" layoutY="55.0" text="Reservation-Management">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="58.0" layoutY="187.0" prefHeight="526.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="tabOrderId" prefWidth="61.0" text="ORDERID" />
+          <TableColumn fx:id="tabInvoiceId" prefWidth="68.0" text="INVOICEID" />
+            <TableColumn fx:id="tabBoxId" prefWidth="66.0" text="BOXID" />
+            <TableColumn fx:id="tabCustomer" prefWidth="151.0" text="Customer" />
+            <TableColumn fx:id="tabFrom" prefWidth="97.0" text="From" />
+            <TableColumn fx:id="tabTo" minWidth="3.0" prefWidth="64.0" text="To" />
+            <TableColumn fx:id="tabPrice" prefWidth="136.0" text="Price" />
+            <TableColumn fx:id="tabHorse" prefWidth="156.0" text="Horse" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="707.0" layoutY="728.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Delete Selection" />
+      <TextField fx:id="filterField" layoutX="58.0" layoutY="728.0" prefHeight="25.0" prefWidth="100.0" promptText="Search From..." />
+      <Button fx:id="refreshButton" layoutX="59.0" layoutY="782.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="217.0" text="Refresh" />
+      <Button fx:id="addButton" layoutX="707.0" layoutY="782.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Make Reservation" />
+      <TextField fx:id="filterField2" layoutX="176.0" layoutY="728.0" prefHeight="25.0" prefWidth="100.0" promptText="Search To..." />
+   </children>
+</AnchorPane>
