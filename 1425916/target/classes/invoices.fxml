@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerInvoices">
+   <children>
+      <Label layoutX="364.0" layoutY="60.0" prefHeight="70.0" prefWidth="172.0" text="Invoices">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="invoiceArea" layoutX="215.0" layoutY="319.0" prefHeight="200.0" prefWidth="470.0" />
+      <TextField fx:id="textCustomer" layoutX="376.0" layoutY="161.0" promptText="CustomerId..." />
+      <Button fx:id="generateInvoiceButton" layoutX="396.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Generate Invoice" />
+   </children>
+</AnchorPane>
